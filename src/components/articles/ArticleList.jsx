@@ -1,20 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from '../articles/AppArticle.css';
+import styles from '../articles/Articles.css';
 import Article from '../articles/Article';
 
 function ArticleList({ articles }) {
-  const articleElements = articles.map(article => (
-    <li key={article.title}>
-      <Article {...article} />
-    </li>
+  console.log(articles);
+  const ArticleElements = articles.map(article => (
+    <Article key={article.source} article={article}/>
   ));
+
   return (
     <div className={styles.articles}>
-      <ul>{articleElements}</ul>
+      <ul>{ArticleElements}</ul>
     </div>
   );
-};
+}
 
 ArticleList.propTypes = {
   articles: PropTypes.arrayOf(PropTypes.shape({

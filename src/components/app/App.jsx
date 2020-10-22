@@ -1,5 +1,5 @@
 import React from 'react';
-import ArticleList from '../articles/ArticleList';
+import AllArticles from '../../containers/AllArticles';
 // import { 
 //   BrowserRouter as Router,
 //   Route,
@@ -7,5 +7,5 @@ import ArticleList from '../articles/ArticleList';
 // } from 'react-router-dom';
 
 export default function App() {
-  return <ArticleList />;
+  return <AllArticles />;
 }

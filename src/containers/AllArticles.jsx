@@ -1,38 +1,44 @@
 import React, { Component } from 'react';
-import TopHeadLines from '../components/articles/ArticleList';
 import { getTopHeadLines } from '../services/news-api-fetch';
 import Loading from '../components/loading/Loading';
+import Search from '../components/search/Search';
+import ArticleList from '../components/articles/ArticleList';
 
 export default class AllArticles extends Component {
   state = {
+    searchWord: '',
     articles: [],
     loading: false
   }
-
-  componentDidMount() {
-    getTopHeadLines()
-      .then(articles => {
-        this.setState({ articles, loading: false });
-      });
-  }
-
+  
   handleSearch = () => {
     this.setState({ loading: true });
 
-    getTopHeadLines()
+    getTopHeadLines(this.state.searchWord)
       .then(articles => this.setState({ articles, loading: false }));
   }
 
+  handleChange = ({ target }) => {
+    this.setState({ [ target.name ]: target.value });
+
+    console.log(target.name);
+  }
+
   render() {
-    const { articles, loading } = this.state;
+    const { articles, loading, searchWord } = this.state;
     
     return (
       <div>
+        <Search 
+          onChange={this.handleChange}
+          searchWord={searchWord}
+        />
         <button onClick={this.handleSearch}>Next</button>
         {
           loading ?
             <Loading /> :
-            <TopHeadLines articles={articles} />
+            <ArticleList 
+              articles={articles} />
         }
       </div>
     );
