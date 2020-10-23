@@ -1,9 +1,8 @@
-  
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Search.css';
 
-function Search({ searchTerm, onChange }) {
+function Search({ searchWord, onChange }) {
   return (
     <div id={styles.Search}>
       <label htmlFor="search">Search</label>
@@ -11,7 +10,7 @@ function Search({ searchTerm, onChange }) {
         id="search"
         type="search"
         name="search"
-        value={searchTerm}
+        value={searchWord}
         onChange={onChange}
       />
     </div>
@@ -19,7 +18,7 @@ function Search({ searchTerm, onChange }) {
 }
 
 Search.propTypes = {
-  searchTerm: PropTypes.string.isRequired,
+  searchWord: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired
 };
 

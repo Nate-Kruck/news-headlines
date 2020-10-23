@@ -1,12 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from '../articles/Articles.css';
-import Article from '../articles/Article';
+import styles from './Articles.css';
+import Article from '../../Components/Article/Article';
 
 function ArticleList({ articles }) {
-  console.log(articles);
   const ArticleElements = articles.map(article => (
-    <Article key={article.source} article={article}/>
+    <Article key={article.title} article={article}/>
   ));
 
   return (

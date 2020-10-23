@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { getTopHeadLines } from '../services/news-api-fetch';
-import Loading from '../components/loading/Loading';
-import Search from '../components/search/Search';
-import ArticleList from '../components/articles/ArticleList';
+import { getArticles } from '../Services/news-api-fetch';
+import Loading from '../Components/Loading/Loading';
+import Search from '../Components/Search/Search';
+import ArticleList from '../Components/Articles/ArticleList';
 
 export default class AllArticles extends Component {
   state = {
@@ -14,14 +14,13 @@ export default class AllArticles extends Component {
   handleSearch = () => {
     this.setState({ loading: true });
 
-    getTopHeadLines(this.state.searchWord)
+    getArticles(this.state.searchWord)
       .then(articles => this.setState({ articles, loading: false }));
   }
 
   handleChange = ({ target }) => {
-    this.setState({ [ target.name ]: target.value });
+    this.setState({ searchWord: target.value });
 
-    console.log(target.name);
   }
 
   render() {
@@ -33,7 +32,7 @@ export default class AllArticles extends Component {
           onChange={this.handleChange}
           searchWord={searchWord}
         />
-        <button onClick={this.handleSearch}>Next</button>
+        <button onClick={this.handleSearch}>Get News</button>
         {
           loading ?
             <Loading /> :

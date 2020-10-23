@@ -1,10 +1,5 @@
 import React from 'react';
-import AllArticles from '../../containers/AllArticles';
-// import { 
-//   BrowserRouter as Router,
-//   Route,
-//   Switch,
-// } from 'react-router-dom';
+import AllArticles from '../../Containers/AllArticles';
 
 export default function App() {
   return <AllArticles />;

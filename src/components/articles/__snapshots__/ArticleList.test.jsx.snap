@@ -1,0 +1,102 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArticleList Testing render an ArticleList 1`] = `
+<DocumentFragment>
+  <div
+    class="articles"
+  >
+    <ul>
+      <li
+        class="Article"
+      >
+        <div>
+          <h1
+            data-testid="article"
+          >
+            title1
+          </h1>
+          <p>
+            source
+          </p>
+          <p>
+            Bertholomule
+          </p>
+        </div>
+        <p>
+          Grab your torch and pitch forks
+        </p>
+        <a
+          href="nate-kruck.com"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <img
+            alt="title1"
+            src="http://placeholder.com/articles"
+          />
+        </a>
+      </li>
+      <li
+        class="Article"
+      >
+        <div>
+          <h1
+            data-testid="article"
+          >
+            title2
+          </h1>
+          <p>
+            source
+          </p>
+          <p>
+            Bertholomule
+          </p>
+        </div>
+        <p>
+          Grab your torch and pitch forks
+        </p>
+        <a
+          href="nate-kruck.com"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <img
+            alt="title2"
+            src="http://placeholder.com/articles"
+          />
+        </a>
+      </li>
+      <li
+        class="Article"
+      >
+        <div>
+          <h1
+            data-testid="article"
+          >
+            title3
+          </h1>
+          <p>
+            source
+          </p>
+          <p>
+            Bertholomule
+          </p>
+        </div>
+        <p>
+          Grab your torch and pitch forks
+        </p>
+        <a
+          href="nate-kruck.com"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <img
+            alt="title3"
+            src="http://placeholder.com/articles"
+          />
+        </a>
+      </li>
+    </ul>
+  </div>
+</DocumentFragment>
+`;
