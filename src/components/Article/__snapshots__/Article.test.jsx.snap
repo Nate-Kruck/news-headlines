@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Article Testing render an Article 1`] = `
+<DocumentFragment>
+  <div
+    class="mainGrid"
+  >
+    <li
+      class="Article"
+    >
+      <span
+        class="title"
+      >
+        <h1
+          data-testid="article"
+        >
+          some text
+        </h1>
+      </span>
+      <span
+        class="imageContainer"
+      >
+        <a
+          href="nate-kruck.com"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <img
+            alt="some text"
+            src="http://placeholder.com/articles"
+          />
+        </a>
+      </span>
+      <p
+        class="author"
+      >
+        Bertholomule
+      </p>
+      <p
+        class="description"
+      >
+        Hey friends
+      </p>
+    </li>
+  </div>
+</DocumentFragment>
+`;
