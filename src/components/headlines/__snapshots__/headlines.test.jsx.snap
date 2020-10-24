@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TopHeadLines component renders TopHeadlines 1`] = `
+<DocumentFragment>
+  <ul
+    data-tesid="headlines"
+  >
+    <li />
+  </ul>
+</DocumentFragment>
+`;
