@@ -6,10 +6,10 @@ export const getArticles = (keyword) => {
     .then(res => res.json())
     .then(json => json.articles.map(article => ({
       id: article.source.id,
-      source: article.source.source,
       title: article.title,
       author: article.author,
-      content: article.content,
+      description: article.description,
+      imageUrl: article.urlToImage,
       url: article.url
     })));
 };

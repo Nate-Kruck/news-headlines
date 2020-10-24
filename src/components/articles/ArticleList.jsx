@@ -17,10 +17,10 @@ function ArticleList({ articles }) {
 
 ArticleList.propTypes = {
   articles: PropTypes.arrayOf(PropTypes.shape({
-    source: PropTypes.string,
     title: PropTypes.string,
     author: PropTypes.string,
-    content: PropTypes.string,
+    description: PropTypes.string,
+    imageUrl: PropTypes.string,
     url: PropTypes.string
   })).isRequired
 };

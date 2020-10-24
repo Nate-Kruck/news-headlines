@@ -6,96 +6,129 @@ exports[`ArticleList Testing render an ArticleList 1`] = `
     class="articles"
   >
     <ul>
-      <li
-        class="Article"
+      <div
+        class="mainGrid"
       >
-        <div>
-          <h1
-            data-testid="article"
+        <li
+          class="Article"
+        >
+          <span
+            class="title"
           >
-            title1
-          </h1>
-          <p>
-            source
-          </p>
-          <p>
+            <h1
+              data-testid="article"
+            >
+              title1
+            </h1>
+          </span>
+          <span
+            class="imageContainer"
+          >
+            <a
+              href="nate-kruck.com"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <img
+                alt="title1"
+                src="http://placeholder.com/articles"
+              />
+            </a>
+          </span>
+          <p
+            class="author"
+          >
             Bertholomule
           </p>
-        </div>
-        <p>
-          Grab your torch and pitch forks
-        </p>
-        <a
-          href="nate-kruck.com"
-          rel="noreferrer"
-          target="_blank"
-        >
-          <img
-            alt="title1"
-            src="http://placeholder.com/articles"
-          />
-        </a>
-      </li>
-      <li
-        class="Article"
-      >
-        <div>
-          <h1
-            data-testid="article"
+          <p
+            class="description"
           >
-            title2
-          </h1>
-          <p>
-            source
+            Hey friends
           </p>
-          <p>
+        </li>
+      </div>
+      <div
+        class="mainGrid"
+      >
+        <li
+          class="Article"
+        >
+          <span
+            class="title"
+          >
+            <h1
+              data-testid="article"
+            >
+              title2
+            </h1>
+          </span>
+          <span
+            class="imageContainer"
+          >
+            <a
+              href="nate-kruck.com"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <img
+                alt="title2"
+                src="http://placeholder.com/articles"
+              />
+            </a>
+          </span>
+          <p
+            class="author"
+          >
             Bertholomule
           </p>
-        </div>
-        <p>
-          Grab your torch and pitch forks
-        </p>
-        <a
-          href="nate-kruck.com"
-          rel="noreferrer"
-          target="_blank"
-        >
-          <img
-            alt="title2"
-            src="http://placeholder.com/articles"
-          />
-        </a>
-      </li>
-      <li
-        class="Article"
-      >
-        <div>
-          <h1
-            data-testid="article"
+          <p
+            class="description"
           >
-            title3
-          </h1>
-          <p>
-            source
+            Hey friends
           </p>
-          <p>
+        </li>
+      </div>
+      <div
+        class="mainGrid"
+      >
+        <li
+          class="Article"
+        >
+          <span
+            class="title"
+          >
+            <h1
+              data-testid="article"
+            >
+              title3
+            </h1>
+          </span>
+          <span
+            class="imageContainer"
+          >
+            <a
+              href="nate-kruck.com"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <img
+                alt="title3"
+                src="http://placeholder.com/articles"
+              />
+            </a>
+          </span>
+          <p
+            class="author"
+          >
             Bertholomule
           </p>
-        </div>
-        <p>
-          Grab your torch and pitch forks
-        </p>
-        <a
-          href="nate-kruck.com"
-          rel="noreferrer"
-          target="_blank"
-        >
-          <img
-            alt="title3"
-            src="http://placeholder.com/articles"
-          />
-        </a>
-      </li>
+          <p
+            class="description"
+          >
+            Hey friends
+          </p>
+        </li>
+      </div>
     </ul>
   </div>
 </DocumentFragment>

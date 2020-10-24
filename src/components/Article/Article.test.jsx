@@ -11,16 +11,16 @@ describe('Article Testing', () => {
   
   it('render an Article', () => {
     const article = {
-      source: 'source',
       title: 'some text',
       author: 'Bertholomule',
-      content: 'Grab your torch and pitch forks',
+      description: 'Hey friends',
       imageUrl: 'http://placeholder.com/articles',
       url: 'nate-kruck.com'
     };
     const { asFragment } = render(<Article article={article} />);
 
     screen.getByText('some text');
+
     expect(asFragment()).toMatchSnapshot();
   });
 });
