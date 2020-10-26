@@ -1,40 +1,94 @@
 body {
-  background-color: purple;
-  color: white;
+  font-family: 'Droid Serif', serif;
+  background-color: #f9f7f1;
+  color: #2f2f2f;
+  font-size: 14px;
 }
 
 
-.mainGrid {
-  float: left;
+.content {
+  width: 100%;
+  font-size: 0;
+  line-height: 0;
+  word-spacing: -.31em;
+  display: inline-block;
+  margin: 30px 2% 0 2%;
+}
+
+.time {
+  text-transform: uppercase;
+  border-bottom: 2px solid #2f2f2f;
+  border-top: 2px solid #2f2f2f;
+  padding: 5px 0 5px 0;
+  text-align: center;
+  position: relative;
+}
+
+.columns {
+  font-size: 14px;
+  line-height: 20px;
   list-style: none;
-  display: flex;
-  align-items: baseline;
-  flex-direction: column;
+  width: 29.5%;
+  display: inline-block;
+  padding: 0 1% 0 1%;
+  vertical-align: top;
+  margin-bottom: 50px;
+  transition: all .7s;
+  border-left: 1px solid #2f2f2f;
+}
+
+.columns .title {
+  text-align: center;
+  line-height: normal;
+  font-family: 'Playfair Display', serif;
+  margin: 0 auto;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 15px;
+  box-sizing: border-box;
+  padding: 10px 0 10px 0;
+}
+
+.columns .author:before {
+  border-top: 1px solid #2f2f2f;
+  content: '';
+  width: 100px;
+  height: 7px;
+  margin: 0 auto;
+}
+
+.columns .author:after {
+  border-top: 1px solid #2f2f2f;
+  content: '';
+  width: 100px;
+  height: 10px;
+  margin: 0 auto;
 }
 
 .Article img {
-  width: 350px;
   border-radius: 3px;
-}
-
-p {
-  width: 402.4px;
-  height: 111px;
+  -webkit-filter: sepia(80%) contrast(1) opacity(0.8);
+  filter: sepia(80%) grayscale(1) contrast(1) opacity(0.8);
+  mix-blend-mode: multiply;
+  width: 100%;
 }
 
 .author {
-  margin: 20px 0px 15px;
-  font-size: 50px;
-  height: 55px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
 }
 
 .title h1 {
   color: black;
-  width: 320px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #2f2f2f;
+  border-top: 2px solid #2f2f2f;
+  padding: 12px 0 12px 0;
 }
 
-.Article {
+.columns li {
   border: 2px solid black;
-  margin: 20px 50px 30px 20px;
-  ;
+  margin: 0 auto;
+  text-align: center;
 }

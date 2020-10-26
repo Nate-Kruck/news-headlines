@@ -6,19 +6,21 @@ import styles from './Article.css';
   the later has to be added for security purposes */
 function Article({ article }) {
   return (
-    <div className={styles.mainGrid}>
-      <li className={styles.Article}>
-        <span className={styles.title}>
-          <h1 data-testid="article">{article.title}</h1>
-        </span>
-        <span className={styles.imageContainer}>
-          <a href={article.url} target="_blank" rel="noreferrer">
-            <img src={article.imageUrl} alt={article.title} />
-          </a>
-        </span>
-        <p className={styles.author}>{article.author}</p>
-        <p className={styles.description}>{article.description}</p>
-      </li>
+    <div className={styles.content}>
+      <div className={styles.columns}>
+        <li className={styles.Article}>
+          <span className={styles.title}>
+            <h1 data-testid="article">{article.title}</h1>
+          </span>
+          <span className={styles.imageContainer}>
+            <a href={article.url} target="_blank" rel="noreferrer">
+              <img src={article.imageUrl} alt={article.title} />
+            </a>
+          </span>
+          <p className={styles.author}>{article.author}</p>
+          <p className={styles.description}>{article.description}</p>
+        </li>
+      </div>
     </div>
   );
 }

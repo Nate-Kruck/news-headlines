@@ -13,4 +13,3 @@ export const getArticles = (keyword) => {
       url: article.url
     })));
 };
-  
