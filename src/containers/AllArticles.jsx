@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { getArticles } from '../Services/news-api-fetch';
-import Loading from '../components/Loading/Loading';
-import Search from '../components/Search/Search';
-import ArticleList from '../components/Articles/ArticleList';
-import Header from '../components/Header/Header';
-import styles from '../components/Article/Article.css';
+import Loading from '../Components/Loading/Loading';
+import Search from '../Components/Search/Search';
+import ArticleList from '../Components/Articles/ArticleList';
+import Header from '../Components/Header/Header';
+import styles from '../Components/Article/Article.css';
 
 export default class AllArticles extends Component {
   state = {
