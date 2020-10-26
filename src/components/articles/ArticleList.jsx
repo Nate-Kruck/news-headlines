@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Articles.css';
-import Article from '../../Components/Article/Article';
+import Article from '../Article/Article';
 
 function ArticleList({ articles }) {
   const ArticleElements = articles.map(article => (
