@@ -1,5 +1,5 @@
 import React from 'react';
-import AllArticles from '../../Containers/AllArticles';
+import AllArticles from '../../containers/AllArticles';
 
 export default function App() {
   return <AllArticles />;
