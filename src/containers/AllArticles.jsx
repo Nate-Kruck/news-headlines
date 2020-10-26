@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { getArticles } from '../services/news-api-fetch';
-import Loading from '../components/Loading/Loading';
-import Search from '../components/Search/Search';
+import Loading from '../components/loading/Loading';
+import Search from '../components/search/Search';
 import ArticleList from '../components/articles/ArticleList';
 import Header from '../components/Header/Header';
 import styles from '../components/Article/Article.css';
