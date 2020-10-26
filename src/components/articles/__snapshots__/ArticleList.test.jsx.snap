@@ -7,127 +7,139 @@ exports[`ArticleList Testing render an ArticleList 1`] = `
   >
     <ul>
       <div
-        class="mainGrid"
+        class="content"
       >
-        <li
-          class="Article"
+        <div
+          class="columns"
         >
-          <span
-            class="title"
+          <li
+            class="Article"
           >
-            <h1
-              data-testid="article"
+            <span
+              class="title"
             >
-              title1
-            </h1>
-          </span>
-          <span
-            class="imageContainer"
-          >
-            <a
-              href="nate-kruck.com"
-              rel="noreferrer"
-              target="_blank"
+              <h1
+                data-testid="article"
+              >
+                title1
+              </h1>
+            </span>
+            <span
+              class="imageContainer"
             >
-              <img
-                alt="title1"
-                src="http://placeholder.com/articles"
-              />
-            </a>
-          </span>
-          <p
-            class="author"
-          >
-            Bertholomule
-          </p>
-          <p
-            class="description"
-          >
-            Hey friends
-          </p>
-        </li>
+              <a
+                href="nate-kruck.com"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <img
+                  alt="title1"
+                  src="http://placeholder.com/articles"
+                />
+              </a>
+            </span>
+            <p
+              class="author"
+            >
+              Bertholomule
+            </p>
+            <p
+              class="description"
+            >
+              Hey friends
+            </p>
+          </li>
+        </div>
       </div>
       <div
-        class="mainGrid"
+        class="content"
       >
-        <li
-          class="Article"
+        <div
+          class="columns"
         >
-          <span
-            class="title"
+          <li
+            class="Article"
           >
-            <h1
-              data-testid="article"
+            <span
+              class="title"
             >
-              title2
-            </h1>
-          </span>
-          <span
-            class="imageContainer"
-          >
-            <a
-              href="nate-kruck.com"
-              rel="noreferrer"
-              target="_blank"
+              <h1
+                data-testid="article"
+              >
+                title2
+              </h1>
+            </span>
+            <span
+              class="imageContainer"
             >
-              <img
-                alt="title2"
-                src="http://placeholder.com/articles"
-              />
-            </a>
-          </span>
-          <p
-            class="author"
-          >
-            Bertholomule
-          </p>
-          <p
-            class="description"
-          >
-            Hey friends
-          </p>
-        </li>
+              <a
+                href="nate-kruck.com"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <img
+                  alt="title2"
+                  src="http://placeholder.com/articles"
+                />
+              </a>
+            </span>
+            <p
+              class="author"
+            >
+              Bertholomule
+            </p>
+            <p
+              class="description"
+            >
+              Hey friends
+            </p>
+          </li>
+        </div>
       </div>
       <div
-        class="mainGrid"
+        class="content"
       >
-        <li
-          class="Article"
+        <div
+          class="columns"
         >
-          <span
-            class="title"
+          <li
+            class="Article"
           >
-            <h1
-              data-testid="article"
+            <span
+              class="title"
             >
-              title3
-            </h1>
-          </span>
-          <span
-            class="imageContainer"
-          >
-            <a
-              href="nate-kruck.com"
-              rel="noreferrer"
-              target="_blank"
+              <h1
+                data-testid="article"
+              >
+                title3
+              </h1>
+            </span>
+            <span
+              class="imageContainer"
             >
-              <img
-                alt="title3"
-                src="http://placeholder.com/articles"
-              />
-            </a>
-          </span>
-          <p
-            class="author"
-          >
-            Bertholomule
-          </p>
-          <p
-            class="description"
-          >
-            Hey friends
-          </p>
-        </li>
+              <a
+                href="nate-kruck.com"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <img
+                  alt="title3"
+                  src="http://placeholder.com/articles"
+                />
+              </a>
+            </span>
+            <p
+              class="author"
+            >
+              Bertholomule
+            </p>
+            <p
+              class="description"
+            >
+              Hey friends
+            </p>
+          </li>
+        </div>
       </div>
     </ul>
   </div>

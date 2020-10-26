@@ -2,30 +2,43 @@
 
 exports[`App component renders App 1`] = `
 <DocumentFragment>
-  <div>
-    <div
-      id="Search"
+  <header
+    class="Header"
+  >
+    <h1>
+      News4You
+    </h1>
+  </header>
+  <div
+    class="time"
+  >
+    <p />
+    <p>
+      10/26/2020, 2:59:17 PM
+    </p>
+  </div>
+  <div
+    id="Search"
+  >
+    <label
+      for="search"
     >
-      <label
-        for="search"
-      >
-        Search
-      </label>
-      <input
-        id="search"
-        name="search"
-        type="search"
-        value=""
-      />
-    </div>
-    <button>
-      Get News
-    </button>
-    <div
-      class="articles"
-    >
-      <ul />
-    </div>
+      Search
+    </label>
+    <input
+      id="search"
+      name="search"
+      type="search"
+      value=""
+    />
+  </div>
+  <button>
+    Get News
+  </button>
+  <div
+    class="articles"
+  >
+    <ul />
   </div>
 </DocumentFragment>
 `;

@@ -1,14 +1,17 @@
 import React, { Component } from 'react';
-import { getArticles } from '../Services/news-api-fetch';
-import Loading from '../Components/Loading/Loading';
-import Search from '../Components/Search/Search';
-import ArticleList from '../Components/Articles/ArticleList';
+import { getArticles } from '../services/news-api-fetch';
+import Loading from '../components/loading/Loading';
+import Search from '../components/search/Search';
+import ArticleList from '../components/articles/ArticleList';
+import Header from '../components/Header/Header';
+import styles from '../components/Article/Article.css';
 
 export default class AllArticles extends Component {
   state = {
     searchWord: '',
     articles: [],
-    loading: false
+    loading: false,
+    curTime: new Date().toLocaleString()
   }
   
   handleSearch = () => {
@@ -23,11 +26,16 @@ export default class AllArticles extends Component {
 
   }
 
+
   render() {
-    const { articles, loading, searchWord } = this.state;
+    const { articles, loading, searchWord, curTime } = this.state;
     
     return (
-      <div>
+      <>
+        <Header />
+        <div className={styles.time}>
+          <p>{curTime}</p>
+        </div>
         <Search 
           onChange={this.handleChange}
           searchWord={searchWord}
@@ -39,7 +47,7 @@ export default class AllArticles extends Component {
             <ArticleList 
               articles={articles} />
         }
-      </div>
+      </>
     );
   }
 }
