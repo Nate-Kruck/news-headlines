@@ -4,7 +4,7 @@ import {
   cleanup,
   screen
 } from '@testing-library/react';
-import ArticleList from '../Articles/ArticleList';
+import ArticleList from './ArticleList';
 
 describe('ArticleList Testing', () => {
   afterEach(() => cleanup());

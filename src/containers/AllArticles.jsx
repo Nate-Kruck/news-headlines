@@ -28,13 +28,12 @@ export default class AllArticles extends Component {
 
 
   render() {
-    const { articles, loading, searchWord, curTime, weather } = this.state;
+    const { articles, loading, searchWord, curTime } = this.state;
     
     return (
       <>
         <Header />
         <div className={styles.time}>
-          <p>{weather}</p>
           <p>{curTime}</p>
         </div>
         <Search 
